@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pergunte ao Octavius</title>
+    <link rel="stylesheet" href="sad.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <button 
+    class="modo-btn" 
+    id="modoBtn"
+    onclick="trocarModo()"
+>
+    Modo Escolha
+</button>
+
+    
+
+   
+    <div class="container">
+        <img src="bonjovis.png" alt="tua_mae"> </img>
+        <h1> Pergunte ao Octavius</h1>
+
+        <input 
+            type="text" 
+            id="pergunta" 
+            placeholder="Só pergunta respondida com sim e não né caralho"
+        >
+
+        <div id="modo-escolha" style="display:none;">
+            <input 
+                type="text" 
+                id="opcao1"
+                placeholder="Opção 1"
+            >
+            <input 
+                type="text" 
+                id="opcao2"
+                placeholder="Opção 2"
+            >
+        </div>
+        
+
+
+        <button onclick="perguntar()">Perguntar</button>
+
+        <div id="resposta" class="resposta"></div>
+    </div>
+
+    <script src="otavio.js"></script>
+</body>
+</html>
